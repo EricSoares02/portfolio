@@ -1,12 +1,16 @@
+'use client'
+import Header from "@/components/header/header";
+import AboutMe from "@/components/about/aboutMe";
 import Image from "next/image";
 
 
 export default function Home() {
   return (
+    <>
+    <Header/>
     <main>
-        <h1>
-          hi meu mano
-        </h1>
+      <AboutMe/>
     </main>
+    </>
   );
 }
