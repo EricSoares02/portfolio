@@ -1,9 +1,9 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 const AboutMeCSS = {
   Conteiner: styled.section`
     width: 100%;
-    height: 512px;
+    height: 542px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,8 +56,6 @@ const AboutMeCSS = {
       gap: 5px;
     }
   `,
-
-  DownloadCv: styled.div``,
 
   AvatarCase: styled.div`
     width: 100%;

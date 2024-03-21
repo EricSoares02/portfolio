@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { theme } from "./globals.css";
+import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -18,7 +20,7 @@ body {
   overflow-x: hidden;
 };
 main{
-  position: absolute;
+  position: relative;
   top: 80px;
   width: 100%;
   background-color: ${(props) => props.theme.colors.gray};
@@ -39,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}><ThemeProvider theme={theme}><GlobalStyle/>{children}</ThemeProvider></body>
+      <body className={inter.className}><ThemeProvider theme={theme}><GlobalStyle/><Header/><main>{children}</main><Footer/></ThemeProvider></body>
     </html>
   );
 }

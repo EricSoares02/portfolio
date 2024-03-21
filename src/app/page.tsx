@@ -1,16 +1,18 @@
 'use client'
-import Header from "@/components/header/header";
 import AboutMe from "@/components/about/aboutMe";
-import Image from "next/image";
+import Skills from "@/components/skills/skill";
+import Business from "@/components/business/business";
+import Projects from "@/components/projects/projects";
+
 
 
 export default function Home() {
   return (
     <>
-    <Header/>
-    <main>
       <AboutMe/>
-    </main>
+      <Business/>
+      <Projects/>
+      <Skills/>
     </>
   );
 }

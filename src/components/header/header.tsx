@@ -22,10 +22,10 @@ export default function Header() {
 
 
           <HeaderCSS.List>
-            <HeaderCSS.Inside_list>SOBRE MIM</HeaderCSS.Inside_list>
-            <HeaderCSS.Inside_list>PROJETOS</HeaderCSS.Inside_list>
-            <HeaderCSS.Inside_list>CONTATOS</HeaderCSS.Inside_list>
-            <HeaderCSS.Inside_list>TECNOLÓGIAS</HeaderCSS.Inside_list>
+            <HeaderCSS.Inside_list>ABOUT ME</HeaderCSS.Inside_list>
+            <HeaderCSS.Inside_list>PROJECTS</HeaderCSS.Inside_list>
+            <HeaderCSS.Inside_list>CONTACTS</HeaderCSS.Inside_list>
+            <HeaderCSS.Inside_list>TECHNOLOGIES</HeaderCSS.Inside_list>
           </HeaderCSS.List>
 
           <HeaderCSS.Language_options>
