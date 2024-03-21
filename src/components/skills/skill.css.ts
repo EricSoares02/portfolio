@@ -3,54 +3,38 @@ import styled from "styled-components";
 const SkillCSS = {
   Conteiner: styled.div`
     width: 100%;
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin-bottom: 200px;
-    background-color: ${(props) => props.theme.colors.beige};
-  `,
-
-  Align: styled.div`
-    width: 80%;
-    height: 100%;
-    display: block;
-  `,
-
-  Text: styled.section`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 10%;
-  `,
-
-  SkillConteiner: styled.div`
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    height: 90%;
-  `,
-
-  SkillCases: styled.section`
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 12px;
-    justify-content: center;
-    width: 400px;
-    height: 100%;
-    padding: 10px;
-    background-color: white;
-  `,
-
-  TechCase: styled.div`
+    height: 750px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80px;
-    height: 80px;
-    background-color: green;
+    margin-bottom: 200px;
+    background-color: ${(props) => props.theme.colors.lightBlue};
+  `,
+
+  Text: styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    height: 20%;
+    gap: 5px;
+    h1 {
+      font-size: 30px;
+    }
+    p{
+      font-size: 12px;
+      color: ${(props) => props.theme.colors.shadowcolor};
+
+    }
+  `,
+
+  SkillConteiner: styled.div`
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 12px;
+    width: 55%;
+    height: 80%;
+    padding: 15px;
     img {
       object-fit: contain;
     }

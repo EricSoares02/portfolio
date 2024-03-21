@@ -4,42 +4,54 @@ const ProjectsCSS = {
   Conteiner: styled.div`
     width: 100%;
     height: auto;
-    background-color: red;
+    margin-bottom: 50px;
   `,
 
-  Text: styled.div`
+  TextConteiner: styled.div`
     width: 100%;
-    height: 100px;
+    height: 120px;
     display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  `,
+
+  TextBox: styled.div`
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     align-items: center;
     justify-content: center;
-    background-color: blue;
-    span{
-        font-weight: bolder;
-        font-size: 30px;
+    span {
+      font-weight: bolder;
+      font-size: 30px;
+    }
+    p {
+      color: ${(props) => props.theme.colors.shadowcolor};
+      text-align: center;
     }
   `,
 
   ProjectsConteiner: styled.div`
     width: 100%;
-    height: 90%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 12px;
+    gap: 70px;
     justify-content: center;
-    background-color: yellow;
     overflow-y: scroll;
   `,
 
   ProjectsCase: styled.section`
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 430px;
     display: flex;
     flex-direction: column;
-    background-color: burlywood;
-    img{
-        object-fit: contain;
-        border-radius: 20px;
+    gap: 5px;
+    img {
+      object-fit: cover;
+      border-radius: 8px;
     }
   `,
 
@@ -49,19 +61,31 @@ const ProjectsCSS = {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: red;
     padding: 10px;
-    `,
+    h1 {
+      font-size: 26px;
+    }
+    p {
+      text-align: justify;
+      font-size: 12px;
+      color: ${(props) => props.theme.colors.shadowcolor};
+    }
+  `,
 
   ViewProject: styled.div`
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: darkblue;
-`,
-
+    justify-content: space-between;
+    padding: 4px;
+    a {
+      color: ${(props) => props.theme.colors.headerBlue};
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  `,
 };
 
 export { ProjectsCSS };
