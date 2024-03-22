@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function AboutMe() {
   return (
     <AboutMeCSS.Conteiner>
-      <AboutMeCSS.AlignConteiner>
+      <AboutMeCSS.AlignConteiner id="aboutme">
         <AboutMeCSS.Division>
           <AboutMeCSS.Me>
             <h1>

@@ -11,6 +11,7 @@ export const theme = {
 
     beige: "#F2F2F2",
     orange: "#FF9600",
+    footerColor: "#1F1F1F"
   },
 
   transition: "0.9s",

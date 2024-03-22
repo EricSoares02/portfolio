@@ -29,7 +29,15 @@ const projects = [
     deploy: "https://dribbble.com/Soares02/collections/7025021-port-ideia",
   },
   {
-    name: "INter Midia",
+    name: "Inter Midia",
+    title:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. In labore laudantium consequuntur eveniet officia excepturi voluptas, nostrum corrupti unde est amet mollitia.",
+    img: "https://docs.google.com/uc?id=120U25zqf2XZMVNbBXneB27YcooxzDi07",
+    git: "https://dribbble.com/shots/21084045-Web-Developer-Portfolio-landing-page",
+    deploy: "https://dribbble.com/Soares02/collections/7025021-port-ideia",
+  },
+  {
+    name: "Pokemon Care",
     title:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. In labore laudantium consequuntur eveniet officia excepturi voluptas, nostrum corrupti unde est amet mollitia.",
     img: "https://docs.google.com/uc?id=120U25zqf2XZMVNbBXneB27YcooxzDi07",
@@ -40,7 +48,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <ProjectsCSS.Conteiner>
+    <ProjectsCSS.Conteiner id="projects">
       <ProjectsCSS.TextConteiner>
         <ProjectsCSS.TextBox>
            <span>Projects I Built</span>

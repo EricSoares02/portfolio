@@ -14,6 +14,14 @@ const HeaderCSS = {
     background-color: ${(props) => props.theme.colors.orange};
     color: ${(props) => props.theme.colors.white};
     box-shadow: 0 0 7px ${(props) => props.theme.colors.shadowcolor};
+    transition: ${(props) => props.theme.transition};
+    a{
+      text-decoration: none;
+      color: ${(props) => props.theme.colors.white};
+      &:hover{
+        color: ${(props) => props.theme.colors.purple};
+      }
+    }
   `,
 
   Conteiner: styled.div`
@@ -60,9 +68,8 @@ const HeaderCSS = {
     font-weight: bold;
     font-size: 12px;
     cursor: pointer;
-    transition: ${(props) => props.theme.transition};
-    &:hover {
-      color: ${(props) => props.theme.colors.purple};
+    a{
+      transition: ${(props) => props.theme.transition};
     }
   `,
 

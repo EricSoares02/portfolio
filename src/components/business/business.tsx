@@ -33,7 +33,7 @@ export default function Business(){
 
 
     return (
-        <BusinessCSS.Conteiner>
+        <BusinessCSS.Conteiner id="business">
             <BusinessCSS.Align>
                 <BusinessCSS.BusinessAndApllications>
                 <BusinessCSS.Text>

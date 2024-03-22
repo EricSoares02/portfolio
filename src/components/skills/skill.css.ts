@@ -39,6 +39,21 @@ const SkillCSS = {
       object-fit: contain;
     }
   `,
+
+  SkillCase: styled.div<{ $display?: string; }>`
+    display: block;
+    width: 65px;
+    height: 80px;
+    div{
+      width: 100%;
+      height: 15px;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      font-weight: bold;
+      display: flex;
+    }
+  `
 };
 
 export { SkillCSS };
