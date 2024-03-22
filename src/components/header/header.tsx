@@ -64,7 +64,9 @@ export default function Header() {
               </HeaderCSS.Inside_list>
             </HeaderCSS.List>
           </nav>
-
+          <HeaderCSS.Menu>
+            <Image src="/menu.svg" alt="menu" width={25} height={25} />
+          </HeaderCSS.Menu>
           <HeaderCSS.Language_options>
             <Image
               src="/language/pt-br.png"

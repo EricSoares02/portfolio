@@ -1,3 +1,4 @@
+import { devices } from "@/app/global.screen";
 import styled from "styled-components";
 
 const HeaderCSS = {
@@ -59,13 +60,29 @@ const HeaderCSS = {
     }
   `,
 
+  Menu: styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    @media ${devices.lg} {
+      display: none;
+
+    }
+  `,
+
   List: styled.ul`
     width: auto;
     height: 100%;
-    display: flex;
+    display: none;
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+    @media ${devices.lg} {
+      display: flex;
+
+    }
   `,
 
   Inside_list: styled.li`

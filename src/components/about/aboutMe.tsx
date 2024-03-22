@@ -14,7 +14,7 @@ export default function AboutMe() {
             <h2>Full Stack Developer</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum expedita corrupti dolore nobis repudiandae. Fugiat est repellendus ipsam ducimus quos facere officia cum, accusantium ab impedit, voluptas rerum eius unde.</p>
 
-            <Link href="https://drive.google.com/uc?export=download&id=1yeRkcU4Le65G3NPvbNJ8fO2pg4a9HDdX">Download Resume  <Image src="/download.svg" alt="avatar" width={30} height={30} /></Link>
+            <Link href="https://drive.google.com/uc?export=download&id=1yeRkcU4Le65G3NPvbNJ8fO2pg4a9HDdX">Download Resume  <Image src="/download.svg" alt="download svg" width={30} height={30} /></Link>
           </AboutMeCSS.Me>
         </AboutMeCSS.Division>
         <AboutMeCSS.Division>
