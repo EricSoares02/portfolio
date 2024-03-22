@@ -3,11 +3,11 @@ import styled from "styled-components";
 const SkillCSS = {
   Conteiner: styled.div`
     width: 100%;
-    height: 750px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     background-color: ${(props) => props.theme.colors.lightBlue};
   `,
 

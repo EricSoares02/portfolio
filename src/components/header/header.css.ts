@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 const HeaderCSS = {
   Header: styled.header`
     width: 100%;
@@ -15,12 +14,21 @@ const HeaderCSS = {
     color: ${(props) => props.theme.colors.white};
     box-shadow: 0 0 7px ${(props) => props.theme.colors.shadowcolor};
     transition: ${(props) => props.theme.transition};
-    a{
+    a {
       text-decoration: none;
       color: ${(props) => props.theme.colors.white};
-      &:hover{
+      &:hover {
         color: ${(props) => props.theme.colors.purple};
       }
+    }
+    .division1 {
+      width: 40%;
+    }
+    .division2 {
+      width: 10%;
+    }
+    .division3 {
+      width: 40%;
     }
   `,
 
@@ -33,14 +41,12 @@ const HeaderCSS = {
   `,
 
   Divisions: styled.section`
-    width: 33%;
     height: 100%;
     display: flex;
-    gap: 20px;
+    gap: 16px;
     align-items: center;
     justify-content: center;
   `,
-
 
   MyName: styled.div`
     width: 100%;
@@ -48,11 +54,10 @@ const HeaderCSS = {
     display: flex;
     align-items: center;
     justify-content: start;
-    h1{
+    h1 {
       font-size: 16px;
     }
   `,
-
 
   List: styled.ul`
     width: auto;
@@ -68,13 +73,13 @@ const HeaderCSS = {
     font-weight: bold;
     font-size: 12px;
     cursor: pointer;
-    a{
+    a {
       transition: ${(props) => props.theme.transition};
     }
   `,
 
   Language_options: styled.button`
-    width: 50px;
+    width: 30px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -84,7 +89,7 @@ const HeaderCSS = {
     cursor: pointer;
     transition: ${(props) => props.theme.transition};
     border: none;
-    img{
+    img {
       border-radius: 9999px;
       object-fit: cover;
     }

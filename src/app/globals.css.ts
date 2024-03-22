@@ -15,4 +15,5 @@ export const theme = {
   },
 
   transition: "0.9s",
+
 };
