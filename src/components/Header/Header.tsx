@@ -17,9 +17,11 @@ export default function Header({theme, toggleTheme}:props){
 
 
     return(
-        <header className="w-full h-[520px] flex flex-col items-center">
+        <header className="w-full h-auto flex flex-col items-center">
             <BgImage color={`${theme ? "bg-gradient-to-r from-fuchsia-600 to-pink-600" : "bg-gradient-to-r from-fuchsia-500 to-cyan-500"}`} />
-            <div className="w-4/5 h-20 flex items-center justify-between">
+            <div className="w-4/5 h-20 flex items-center justify-between
+            max-md:w-11/12
+            ">
                 <MyImageOnHeader/>
                 <div className="h-full flex gap-2 items-center">
                     <ToggleThemeButton theme={theme} toggleTheme={toggleTheme}/>
