@@ -8,7 +8,6 @@ export default function MyImageOnHeader(){
         <div className="h-48 w-48 rounded-full border-2 border-blue-50 flex justify-center items-center -translate-y-12
                 max-md:w-32
                 max-md:h-32
-                max-md:-translate-y-16
                 ">
                     <Image
                     className="w-full h-full rounded-full object-contain"
