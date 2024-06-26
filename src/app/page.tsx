@@ -1,6 +1,9 @@
 "use client"
 
 import Header from "@/components/Header/Header";
+import AboutMe from "@/components/Main/AboutMe";
+import Projects from "@/components/Main/Projects/Projects";
+import MainSkills from "@/components/Main/Skills/MainSkills/mainSkills";
 import { useState } from "react";
 
 
@@ -11,13 +14,18 @@ export default function Home(){
 
     const toggleTheme = ()=>{
         setTheme(!theme);
-        console.log(theme)
     }
 
 
     return(
-        <div className={`w-screen h-screen ${theme ? "bg-white text-black" : "bg-slate-900 text-white"}`}>
+        <div className={`w-screen h-auto ${theme ? "bg-white text-black" : "bg-slate-900 text-white"}`}>
             <Header theme={theme} toggleTheme={toggleTheme}/>
+            <main className="w-full h-auto flex flex-col items-center">
+                <AboutMe />
+                <MainSkills />
+                <Projects />
+                <section className="w-full h-[600px]"></section>
+            </main>
         </div>
     )
 
