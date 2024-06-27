@@ -16,7 +16,7 @@ const url = process.env.NEXT_PROJECTS_URL
 
 const projects = [
         {
-            "image": "https://drive.google.com/uc?export=view&id=19sPAba14chcuQZSeAWvjICGPT-qF4G3t",
+            "image": "https://drive.google.com/uc?export=view&id=1cWtnz1EhrDnjngmmIwqj7Z6V_IbBxKNV",
             "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
             "name": "Portfolio",
             "technologies":[ {

@@ -12,9 +12,9 @@ export default function ProjectsCase({image, name, description, technologies}:Pr
         >
             <Image
                 src={image}
-                width={500}
-                height={500}
-                className="w-full h-full min-h-full"
+                width={330}
+                height={430}
+                className="w-full h-full min-h-full object-cover"
                 alt="project image"
                 
             /> 

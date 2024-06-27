@@ -3,6 +3,7 @@
 import Header from "@/components/Header/Header";
 import AboutMe from "@/components/Main/AboutMe";
 import Projects from "@/components/Main/Projects/Projects";
+import Services from "@/components/Main/Services/Services";
 import MainSkills from "@/components/Main/Skills/MainSkills/mainSkills";
 import { useState } from "react";
 
@@ -23,6 +24,7 @@ export default function Home(){
             <main className="w-full h-auto flex flex-col items-center">
                 <AboutMe />
                 <MainSkills />
+                <Services/>
                 <Projects />
                 <section className="w-full h-[600px]"></section>
             </main>
