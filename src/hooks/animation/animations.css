@@ -1,0 +1,73 @@
+
+/*Slide In*/
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+.slideIn{
+
+    animation: slideIn 2000ms;
+
+}
+
+
+/*Slide Out*/
+@keyframes slideOut {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.slideOut{
+
+  animation: slideOut 2000ms;
+
+}
+
+
+/*Bounce*/
+@keyframes bounce {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-5%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+.bounce{
+
+    animation: bounce 1000ms infinite;
+
+}
+
+
+/*Bounce*/
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.bounce{
+
+  animation: bounce 1000ms infinite;
+
+}
