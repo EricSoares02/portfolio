@@ -10,182 +10,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './Swiper.css'
 import useWindowSize from "@/hooks/windowSize";
+import { ProjectsType } from "@/types/projectsType";
 
 
-const url = process.env.NEXT_PROJECTS_URL 
 
-const projects = [
-        {
-            "image": "https://drive.google.com/uc?export=view&id=1cWtnz1EhrDnjngmmIwqj7Z6V_IbBxKNV",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Portfolio",
-            "technologies":[ {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },]
-        },
-        {
-            "image": "https://drive.google.com/uc?export=view&id=1g5ZKxEbBV7DzLzoMH3M7NMDHsDXjD9jm",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Soares Shopping",
-            "technologies": [
-                {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },
-                {
-                    "image": "https://drive.google.com/uc?export=view&id=1A3L7KkTFImPJEhhwEJXa9Xm6ok05rI1O",
-                    "name": "Node JS"
-                }
-            ]
-        },
-        {
-            "image": "https://drive.google.com/uc?export=view&id=19sPAba14chcuQZSeAWvjICGPT-qF4G3t",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Portfolio",
-            "technologies":[ {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },]
-        },
-        {
-            "image": "https://drive.google.com/uc?export=view&id=1g5ZKxEbBV7DzLzoMH3M7NMDHsDXjD9jm",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Soares Shopping",
-            "technologies": [
-                {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },
-                {
-                    "image": "https://drive.google.com/uc?export=view&id=1A3L7KkTFImPJEhhwEJXa9Xm6ok05rI1O",
-                    "name": "Node JS"
-                }
-            ]
-        },
-        {
-            "image": "https://drive.google.com/uc?export=view&id=19sPAba14chcuQZSeAWvjICGPT-qF4G3t",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Portfolio",
-            "technologies":[ {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },]
-        },
-        {
-            "image": "https://drive.google.com/uc?export=view&id=1g5ZKxEbBV7DzLzoMH3M7NMDHsDXjD9jm",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Soares Shopping",
-            "technologies": [
-                {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },
-                {
-                    "image": "https://drive.google.com/uc?export=view&id=1A3L7KkTFImPJEhhwEJXa9Xm6ok05rI1O",
-                    "name": "Node JS"
-                }
-            ]
-        },
-        {
-            "image": "https://drive.google.com/uc?export=view&id=19sPAba14chcuQZSeAWvjICGPT-qF4G3t",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Portfolio",
-            "technologies":[ {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },]
-        },
-        {
-            "image": "https://drive.google.com/uc?export=view&id=1g5ZKxEbBV7DzLzoMH3M7NMDHsDXjD9jm",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Soares Shopping",
-            "technologies": [
-                {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },
-                {
-                    "image": "https://drive.google.com/uc?export=view&id=1A3L7KkTFImPJEhhwEJXa9Xm6ok05rI1O",
-                    "name": "Node JS"
-                }
-            ]
-        },
-        {
-            "image": "https://drive.google.com/uc?export=view&id=19sPAba14chcuQZSeAWvjICGPT-qF4G3t",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Portfolio",
-            "technologies":[ {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },]
-        },
-        {
-            "image": "https://drive.google.com/uc?export=view&id=1g5ZKxEbBV7DzLzoMH3M7NMDHsDXjD9jm",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Soares Shopping",
-            "technologies": [
-                {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },
-                {
-                    "image": "https://drive.google.com/uc?export=view&id=1A3L7KkTFImPJEhhwEJXa9Xm6ok05rI1O",
-                    "name": "Node JS"
-                }
-            ]
-        }
-        , {
-            "image": "https://drive.google.com/uc?export=view&id=19sPAba14chcuQZSeAWvjICGPT-qF4G3t",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Portfolio",
-            "technologies":[ {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },]
-        },
-        {
-            "image": "https://drive.google.com/uc?export=view&id=1g5ZKxEbBV7DzLzoMH3M7NMDHsDXjD9jm",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Soares Shopping",
-            "technologies": [
-                {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },
-                {
-                    "image": "https://drive.google.com/uc?export=view&id=1A3L7KkTFImPJEhhwEJXa9Xm6ok05rI1O",
-                    "name": "Node JS"
-                }
-            ]
-        }
-        , {
-            "image": "https://drive.google.com/uc?export=view&id=19sPAba14chcuQZSeAWvjICGPT-qF4G3t",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Portfolio",
-            "technologies":[ {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },]
-        },
-        {
-            "image": "https://drive.google.com/uc?export=view&id=1g5ZKxEbBV7DzLzoMH3M7NMDHsDXjD9jm",
-            "description": "fiwelhtaçetjgaçkjeghjakjtiaghruzhdjzd",
-            "name": "Soares Shopping",
-            "technologies": [
-                {
-                "image": "https://drive.google.com/uc?export=view&id=1YrTdsb9AEFNECHB-Hx-ZYFZcADqZf5jZ",
-                "name": "React"
-                },
-                {
-                    "image": "https://drive.google.com/uc?export=view&id=1A3L7KkTFImPJEhhwEJXa9Xm6ok05rI1O",
-                    "name": "Node JS"
-                }
-            ]
-        }
-    ]
 
-export default function Projects(){
+interface props{
+    projects: ProjectsType[] | null
+}
+
+export default function Projects({projects}:props){
   
     const size = useWindowSize()
 
@@ -205,11 +39,35 @@ export default function Projects(){
         return 5
     }
 
+
+    if(projects === null){
+        return (
+        <div>
+            <span>download data error</span>
+        </div>
+    )
+    }  
+
   return (
-        <section className="w-4/5 h-auto flex flex-col
+        <section className="w-4/5 h-auto flex flex-col gap-8
         max-md:w-10/12
         ">
-            <div className="w-full h-12 flex flex-col items-center justify-center mb-8">
+            <div className="w-full h-12 flex flex-col items-center justify-center">
+                <h1 className="text-2xl font-semibold text-nowrap">Here&#39;s what i&#39;ve been to up</h1>
+                <h2 className="text-sm font-semibold text-nowrap text-gray-400">Here are some personal projects for exhibition</h2>
+            </div>
+            <div className="w-full h-[500px] grid grid-col-2 items-center justify-center">
+               
+            </div>
+            <div className="w-full h-20 flex justify-end items-center mt-4">
+                <Link href="/projects" className="w-44 h-12 flex items-center justify-center duration-500 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 ">See more</Link>
+            </div>
+        </section>
+  );
+};
+
+/**
+  <div className="w-full h-12 flex flex-col items-center justify-center mb-8">
                 <h1 className="text-2xl font-semibold text-nowrap">Here&#39;s what i&#39;ve been to up</h1>
                 <h2 className="text-sm font-semibold text-nowrap text-gray-400">Here are some personal projects for exhibition</h2>
             </div>
@@ -234,7 +92,4 @@ export default function Projects(){
             <div className="w-full h-20 flex justify-end items-center mt-4">
                 <Link href="/projects" className="w-44 h-12 flex items-center justify-center text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 ">See more</Link>
             </div>
-        </section>
-  );
-};
-
+*/

@@ -1,13 +1,12 @@
-import { Tech } from "./techType"
 
 
-interface Projects{
-
-    image: string,
+type ProjectsType = {
     name: string,
     description: string,
-    technologies: Tech[]
+    previewVideo: string,
+    imagesIdAtDrive: string[],
+    technologies: string[],
+    deployLinks: string
+  }
 
-}
-
-export type { Projects }
+export type { ProjectsType }

@@ -1,0 +1,61 @@
+
+@keyframes transition {
+    from {
+        transform: translateY(300%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+}
+
+@keyframes cicle {
+  from {
+      background-position: 0% 50%;
+    }
+    to {
+      background-position: 100% 50%;
+    }
+}
+
+
+#header_animation1{
+    animation: transition 1000ms;
+}
+
+#header_animation2{
+    animation: transition 2000ms;
+}
+
+#header_animation3{
+    animation: transition 3000ms;
+}
+
+.firstanimated{
+  background: linear-gradient(to right, 
+  #7c3aed,
+  #d946ef,
+  #06b6d4,
+  #7c3aed,
+  #d946ef,
+  #06b6d4
+  );
+  background-size: 300%;
+  background-clip: text;
+  animation: cicle 5000ms infinite linear;
+}
+
+.secondanimated{
+  background: linear-gradient(to right, 
+  #c026d3, 
+  #eab308,
+  #be123c,
+  #c026d3, 
+  #eab308,
+  #be123c
+  );
+  background-size: 300%;
+  background-clip: text;
+  animation: cicle 5000ms infinite linear;
+}

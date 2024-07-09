@@ -1,0 +1,53 @@
+
+@keyframes cicle {
+    from {
+        background-position: 0% 50%;
+      }
+      to {
+        background-position: 100% 50%;
+      }
+  }
+
+@keyframes tech-skill-animation {
+    from {
+        height: 0px;
+    } 
+    to{
+       height: 300px;
+    }
+}
+
+@keyframes skills-animation {
+    from {
+        display: none;
+        opacity: 0;
+    } 
+    to{
+        display: flex;
+        opacity: 1;
+    }
+}
+
+.tech-skill{
+    animation: tech-skill-animation 1000ms 1 ease-in;
+}
+
+.skillsa{
+    animation: skills-animation 2000ms 1 ease-in;
+    animation-delay: 2000ms;
+}
+
+.animatedText{
+    background: linear-gradient(to right, 
+    #f89b29,
+    #ff0f7b,
+    #e81cff,
+    #f89b29,
+    #ff0f7b,
+    #e81cff
+    );
+    background-size: 300%;
+    background-clip: text;
+    color: transparent;
+    animation: cicle 5000ms infinite linear;
+  }

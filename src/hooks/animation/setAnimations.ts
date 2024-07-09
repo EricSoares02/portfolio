@@ -29,7 +29,7 @@ const SetAnimation = (elementClass: string, animationClass: string) =>{
 
 const useCssAnimations = (elements: Array<{elementClass: string, 
     animationKey: AnimationKey | string}>) => {
-
+ 
     elements.forEach((n)=>{
         switch (n.animationKey) {
             case AnimationKey.Bounce:
@@ -40,7 +40,12 @@ const useCssAnimations = (elements: Array<{elementClass: string,
 
             case AnimationKey.SlideOut:
                 return SetAnimation(n.elementClass, "slideOut")
-                                
+            
+            case AnimationKey.MoveUp:
+                return SetAnimation(n.elementClass, "moveUp")
+
+            case AnimationKey.MoveDown:
+                return SetAnimation(n.elementClass, "moveDown")
             default:
                 return SetAnimation(n.elementClass, n.animationKey)
         }

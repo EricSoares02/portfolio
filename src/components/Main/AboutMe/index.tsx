@@ -1,12 +1,15 @@
 
+interface props{
+  className: string
+}
 
-export default function AboutMe(){
+export default function AboutMe({className}:props){
 
     return(
-        <section className="w-4/5 h-64 flex flex-col mb-4
+        <section className={`${className} w-4/5 h-64 flex flex-col mb-4
         max-md:h-96
         max-md:w-10/12
-        ">
+        `}>
             <h1
             className="pt-16 text-3xl font-semibold mb-1
             max-md:text-xl

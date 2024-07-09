@@ -1,20 +1,45 @@
-import { Projects } from "@/types/projectsType"
+import { ProjectsType } from "@/types/projectsType"
 import Image from "next/image"
 
+interface props {
+    project: ProjectsType
+}
 
 
-export default function ProjectsCase({image, name, description, technologies}:Projects){
+export default function ProjectsCase({project}:props){
 
-
+    const driveLink = "https://drive.google.com/uc?export=view&id=";
 
     return(
-        <div className={`w-[330px] h-[430px] max-h-[430px] rounded-md flex flex-col relative`}
+        <div className={`w-[334px] h-full flex flex-col bg-emerald-600`}
         >
             <Image
+                src={`${driveLink}${project.imagesIdAtDrive[0]}`}
+                width={330}
+                height={400}
+                className="w-full h-1/2 object-cover"
+                alt="project image"
+                
+            /> 
+            <span className="">{project.name}</span>
+            {project.technologies.map((tech)=>(
+                <span key={tech}>
+                    {tech}
+                </span>
+            ))}
+            
+        </div>
+    )
+
+}
+
+/**
+ * <Image
                 src={image}
                 width={330}
                 height={430}
-                className="w-full h-full min-h-full object-cover"
+                className="w-full h-full min-h-full object-cover duration-500
+                hover:opacity-35"
                 alt="project image"
                 
             /> 
@@ -40,47 +65,5 @@ export default function ProjectsCase({image, name, description, technologies}:Pr
                 </div>
                 
             </div>
-            
-        </div>
-    )
-
-}
-
-/**
- * <div className="w-[300px] h-[420px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-md flex flex-col">
-            <div className="w-full h-[275px]">
-                <Image
-                src={image}
-                width={500}
-                height={500}
-                className="w-full h-full"
-                alt="project image"
-                />
-            </div>
-            <div className="w-full h-[85px] p-8">
-                <span className="font-semibold">{name}</span>
-                <p>{description}</p>
-            </div>
-            <div className="w-full h-[60px] p-8 flex">
-                    <div className="w-2/3 h-full flex items-center justify-start gap-1">
-                        <span className="text-sm text-gray-300">Main Technologies:</span>
-                        {technologies.map((tech)=>(
-                            <Image
-                            src={tech.image}
-                            width={20}
-                            height={20}
-                            className="w-5 h-5"
-                            alt="project image"
-                            key={tech.name}
-                            />
-                        ))}
-                    </div>
-                    <div className="w-1/3 h-full flex items-center justify-end gap-1 bg-red-700">
-                        <a href="" className="text-sm">view</a>
-                        <a href="" className="text-sm">deploy</a>
-                    </div>
-            </div>
-        </div>
- * 
  * 
  */
