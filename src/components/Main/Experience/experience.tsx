@@ -18,7 +18,7 @@ export default function Experience({experiences}: props){
     return(
         <section className="w-4/5 h-auto flex bg-gray-700 rounded-3xl
         max-md:flex-col
-        max-md:w-11/12 
+        max-lg:w-11/12 
         ">
             <div className="w-1/3 h-[500px] flex flex-col justify-center gap-16 pl-14
             max-md:w-full 
