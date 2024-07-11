@@ -3,20 +3,18 @@ import GameSvg from "@/components/svgs/services/game";
 import WebSvg from "@/components/svgs/services/web";
 
 
-interface props{
-    theme: boolean
-}
 
-export default function ServicesSection({theme}:props){
+export default function ServicesSection(){
 
 
     return(
-        <section className={`w-full h-[500px] flex flex-col items-center p-4 ${theme ? "bg-gray-100" : "bg-slate-950"}
+        <section className={`w-full h-[500px] flex flex-col items-center p-4 bg-slate-950
         max-md:h-[1000px]
         `}>
             <div className="w-10/12 h-full flex flex-col items-center">
                 <h1 className="w-full h-20 pl-6 pt-3 text-2xl font-bold
-                max-md:mb-5
+                max-md:mb-5 
+                max-md:text-center
                 ">Services and Solutions</h1>
                 <div className="flex items-center justify-between w-4/5 h-[480px]
                 max-md:flex-col
@@ -26,7 +24,7 @@ export default function ServicesSection({theme}:props){
                      <div className="w-96 h-60 flex flex-col gap-5
                      max-md:items-center
                      ">
-                        <WebSvg size="80px" color={`${theme ? "#000000" : "#ffffff"}`}/>
+                        <WebSvg size="80px" color="#ffffff"/>
                         <h1 className="font-bold text-xl">Web Devolopment</h1>
                         <p className="text-sm text-gray-400
                         max-md:text-center
@@ -35,7 +33,7 @@ export default function ServicesSection({theme}:props){
                     <div className="w-96 h-60 flex flex-col gap-5
                      max-md:items-center
                      ">
-                        <GameSvg size="80px" color={`${theme ? "#000000" : "#ffffff"}`}/>
+                        <GameSvg size="80px" color="#ffffff"/>
                         <h1 className="font-bold text-xl">Games</h1>
                         <p className="text-sm text-gray-400 
                         max-md:text-center
@@ -44,7 +42,7 @@ export default function ServicesSection({theme}:props){
                     <div className="w-96 h-60 flex flex-col gap-5
                      max-md:items-center
                      ">
-                        <AppSvg size="80px" color={`${theme ? "#000000" : "#ffffff"}`}/>
+                        <AppSvg size="80px" color="#ffffff"/>
                         <h1 className="font-bold text-xl">Hybrid Apps</h1>
                         <p className="text-sm text-gray-400
                         max-md:text-center

@@ -1,0 +1,17 @@
+
+
+
+.animatedText{
+    background: linear-gradient(to right, 
+    #f59e0b,
+    #a855f7,
+    #db2777 ,
+    #f59e0b,
+    #a855f7,
+    #db2777 
+    );
+    background-size: 300%;
+    background-clip: text;
+    color: transparent;
+    animation: cicle 5000ms infinite linear;
+  }

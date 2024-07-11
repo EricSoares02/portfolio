@@ -15,5 +15,9 @@ async function getProjects(){
     return data
 }
 
+async function getExperiences() {
+    const {data} = await axios.get(`${api_url}experience`);
+    return data
+}
 
-export {getHardSkills, getProjects}
+export {getHardSkills, getProjects, getExperiences}

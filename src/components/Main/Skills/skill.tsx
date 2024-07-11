@@ -16,7 +16,7 @@ export default function Skill({skills}: props){
         <div className="w-full h-full grid grid-cols-4">
             {skills.map((skill)=>(
                 <div key={skill.name}
-                className="w-24 h-auto flex-col gap-1 items-center justify-center"
+                className="w-24 h-auto flex flex-col gap-1 items-center justify-center"
                 >
                     <div className="w-20 h-20 flex items-center justify-center object-cover bg-white rounded-full">
                         <Image

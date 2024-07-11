@@ -5,7 +5,7 @@ import Skills from "@/components/Main/Skills/skills";
 import { useState, useEffect } from "react";
 import "./header.css"
 import AboutMe from "@/components/Main/AboutMe";
-import { getHardSkills, getProjects } from "@/utils/request";
+import { getHardSkills, getProjects, getExperiences } from "@/utils/request";
 import ServicesSection from "@/components/Main/serviceSection/services";
 import Experience from "@/components/Main/Experience/experience";
 
@@ -15,13 +15,11 @@ import Experience from "@/components/Main/Experience/experience";
 
 export default function Home(){
 
-    const [theme, setTheme] = useState(false);
-    const [data, SetData] = useState({projects: null, hard_skills: null});
+    
+    const [data, SetData] = useState({projects: null, hard_skills: null, experience: null});
     const [techSkills, setTechSkills] = useState("Back End");
 
-    const toggleTheme = ()=>{
-        setTheme(!theme);
-    }
+  
 
     const toggleTechSkills = (techSkill: string)=>{
         setTechSkills(techSkill)
@@ -31,7 +29,7 @@ export default function Home(){
 
     useEffect(()=>{
         async function promises(){
-          const promises = await Promise.all([getProjects(), getHardSkills()]);
+          const promises = await Promise.all([getProjects(), getHardSkills(), getExperiences()]);
 
             return promises
         }
@@ -39,7 +37,8 @@ export default function Home(){
         promises().then((datas)=>{
             SetData({
                 projects: datas[0],
-                hard_skills: datas[1]
+                hard_skills: datas[1],
+                experience: datas[2]
             })
         }).catch((e)=>{
             console.log("error", e)
@@ -51,8 +50,8 @@ export default function Home(){
 
 
     return(
-        <div className={`w-screen h-auto ${theme ? "bg-white text-black" : "bg-gray-900 text-white"}`}>
-            <header className="w-screen h-[690px]">
+        <div className={`w-full h-auto max-w-full bg-gray-900 text-white`}>
+            <header className="w-full h-[690px]">
                 <section className="w-full h-full flex flex-col items-center justify-center">
                     <div className="flex flex-col items-center justify-center gap-1">
                         <span id="header_animation1" className="text-gray-400 text-lg">Eric Soares</span>
@@ -74,30 +73,16 @@ export default function Home(){
             </header>
             <main className="w-full h-auto flex flex-col items-center justify-center gap-8 mb-8">
                 <AboutMe className="aboutMe"/>
-                <ServicesSection theme={theme}/>
+                <ServicesSection/>
                 <Skills toogleTechSkills={toggleTechSkills} currentSkill={techSkills} skills={data.hard_skills}/>
                 <section className="w-full h-[100px] mb-5"></section>
                 <Projects projects={data.projects}></Projects>
-                <Experience />
+                <Experience experiences={data.experience}/>
             </main>
-            <footer className="w-full h-[400px] border-t-[1px]">
-
+            <footer className="w-full h-[500px] border-t-[1px] bg-[#DEDEDE] text-black p-5">
+                
             </footer>
         </div>
     )
 
 }
-
-/**
- * <Header theme={theme} toggleTheme={toggleTheme}/>
-            <main className="w-full h-auto flex flex-col items-center">
-                <MainSkills />
-                <Services/>
-                <Projects />
-                <section className="w-full h-[100px]"></section>
-                <Skills toogleTechSkills={toggleTechSkills} currentSkill={techSkills}/>
-                <section className="w-full h-[100px]">
-                   
-                </section>
-            </main>
- */
