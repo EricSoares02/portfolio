@@ -1,0 +1,50 @@
+
+.Angular{
+    background-color: #dc2626;
+}
+
+.GraphQl{
+    background-color: #ec4899;
+}
+
+.JavaScript{
+    background-color: #eab308;
+}
+
+.Python{
+    background: linear-gradient( to right,
+        #4584b6,
+        #ffde57
+    );
+}
+
+.Mongo{
+    background-color:  #166534;
+}
+
+.Node{
+    background-color: #22c55e;
+}
+
+[class~=".Net"]{
+    background-color: #a855f7;
+}
+
+.React{
+    background-color: #3b82f6;
+}
+.Postgres{
+    background-color: #1e40af;
+}
+
+.RabbitMQ{
+    background-color: #f97316;
+}
+
+.Java{
+    background-color: #94a3b8;
+}
+
+.Docker{
+    background-color: #2563eb;
+}

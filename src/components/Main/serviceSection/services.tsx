@@ -15,7 +15,7 @@ export default function ServicesSection(){
                 <h1 className="w-full h-20 pl-6 pt-3 text-2xl font-bold
                 max-md:mb-5 
                 max-md:text-center
-                ">Services and Solutions</h1>
+                ">O que eu faço?</h1>
                 <div className="flex items-center justify-between w-4/5 h-[480px]
                 max-md:flex-col
                 max-md:gap-24

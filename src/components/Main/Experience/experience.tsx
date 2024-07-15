@@ -31,15 +31,15 @@ export default function Experience({experiences}: props){
                 max-md:text-center
                 max-md:pl-0
                 ">
-                    My <span className="animatedText">education</span> and work experience
+                    Minha <span className="animatedText">educação</span> e work experience.
                 </h1>
 
                 <Link href="https://drive.google.com/uc?export=download&id=1yeRkcU4Le65G3NPvbNJ8fO2pg4a9HDdX"
-                className="w-52 h-14 text-sm flex justify-center items-center duration-300 bg-gradient-to-r from-violet-500 via-purple-500 to-pink-600 font-medium 
+                className="w-52 h-14 text-sm flex justify-center items-center duration-300 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-600 font-medium 
               
                 hover:scale-110
                 "
-                >Download Resume</Link>
+                >Baixar Currículo</Link>
             </div>
             <div className="w-2/3 h-full flex flex-col pt-10
             max-md:w-full

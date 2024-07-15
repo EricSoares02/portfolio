@@ -104,7 +104,7 @@ export default function Skills({skills, toogleTechSkills, currentSkill}: props){
                             <button className="w-full h-24 flex items-center justify-between font-semibold" 
                             onClick={()=>toogleTechSkills("Mobile")}>
                             Mobile <span className={RotateArrow(currentSkill, "Mobile")}><ArrowSvg size="25px" color="#ffffff"/></span></button>
-                            <div className={`${ShowTechSkills(currentSkill, "Mobile")} w-full h-[300px]`}>
+                            <div className={`${ShowTechSkills(currentSkill, "Mobile")} w-full h-[200px]`}>
                                 <Skill skills={skills.filter((skill)=>skill.category === "Mobile")}/>
                             </div>
                         </li>

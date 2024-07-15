@@ -1,5 +1,7 @@
 import { ProjectsType } from "@/types/projectsType"
 import Image from "next/image"
+import Link from "next/link";
+import "./technologies.css"
 
 interface props {
     project: ProjectsType
@@ -11,59 +13,33 @@ export default function ProjectsCase({project}:props){
     const driveLink = "https://drive.google.com/uc?export=view&id=";
 
     return(
-        <div className={`w-[334px] h-full flex flex-col bg-emerald-600`}
-        >
-            <Image
-                src={`${driveLink}${project.imagesIdAtDrive[0]}`}
-                width={330}
-                height={400}
-                className="w-full h-1/2 object-cover"
-                alt="project image"
-                
-            /> 
-            <span className="">{project.name}</span>
-            {project.technologies.map((tech)=>(
-                <span key={tech}>
-                    {tech}
-                </span>
-            ))}
-            
-        </div>
+            <div className="w-[390px] h-[600px] bg-gray-800 flex flex-col justify-end p-5">
+                <div className="w-full h-1/2 border border-blue-600">
+                    
+                <Link href={{
+                    pathname: `/project/running/${project.name}`,
+                }} 
+                className="bg-orange-500"
+                target="_blank"
+                > eye</Link>
+
+                </div>
+                <Link href={{
+                    pathname: "/project",
+                    query: {
+                        "project-name": project.name
+                    }
+                }} className="w-full h-1/2 flex flex-col gap-5">
+                    <span className="text-2xl font-semibold">{project.name}</span>
+                    <p className="text-sm text-justify w-full h-32">{project.description}</p>
+                    <div className="w-full h-auto grid grid-cols-3 gap-2">
+                        {project.technologies.map((tech)=>(
+                            <div key={tech} className={`w-24 h-10 ${tech} flex items-center justify-center rounded-xl`}>{tech}</div>
+                        ))}
+
+                    </div>
+                </Link>
+            </div>
     )
 
 }
-
-/**
- * <Image
-                src={image}
-                width={330}
-                height={430}
-                className="w-full h-full min-h-full object-cover duration-500
-                hover:opacity-35"
-                alt="project image"
-                
-            /> 
-            <div className="absolute bottom-8 left-5 flex flex-col gap-2">
-                <span className="font-semibold">{name}</span>
-              
-                <span className="text-sm">Main Technologies:</span>
-                <span className="flex gap-2">
-                    {technologies.map((tech)=>(
-                        <Image
-                        src={tech.image}
-                        width={20}
-                        height={20}
-                        className="w-5 h-5"
-                        alt="project image"
-                        key={tech.name}
-                        />
-                        ))}
-                </span>
-                <div className="flex gap-7">
-                    <a href="" className="text-sm">view</a>
-                    <a href="" className="text-sm">deploy</a>
-                </div>
-                
-            </div>
- * 
- */

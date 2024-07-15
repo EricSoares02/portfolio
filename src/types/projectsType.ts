@@ -6,7 +6,7 @@ type ProjectsType = {
     previewVideo: string,
     imagesIdAtDrive: string[],
     technologies: string[],
-    deployLinks: string
+    deployLink: string
   }
 
 export type { ProjectsType }
