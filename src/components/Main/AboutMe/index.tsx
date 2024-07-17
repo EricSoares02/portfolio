@@ -1,11 +1,11 @@
 
 import Image from 'next/image';
-
+import "./animation.css"
 
 export default function AboutMe(){
 
     return(
-        <section className="w-4/5 h-[400px] flex mb-4
+        <section className="aboutme w-4/5 h-[400px] flex mb-4
         max-md:h-[730px]
         max-md:w-10/12
         max-md:flex-col-reverse

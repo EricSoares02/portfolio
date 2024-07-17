@@ -12,12 +12,19 @@
 }
 
 .Python{
-    background: linear-gradient( to right,
+    background: linear-gradient(to right,
         #4584b6,
         #ffde57
     );
 }
 
+.Spring{
+    background-color: #22c55e;
+}
+
+.MySQL{
+    background-color: #1e40af;
+}
 .Mongo{
     background-color:  #166534;
 }
@@ -33,6 +40,7 @@
 .React{
     background-color: #3b82f6;
 }
+
 .Postgres{
     background-color: #1e40af;
 }

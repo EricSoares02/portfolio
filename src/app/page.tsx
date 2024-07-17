@@ -3,11 +3,16 @@
 import Projects from "@/components/Main/Projects/Projects";
 import Skills from "@/components/Main/Skills/skills";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import "./header.css"
 import AboutMe from "@/components/Main/AboutMe";
 import { getHardSkills, getProjects, getExperiences } from "@/utils/request";
 import ServicesSection from "@/components/Main/serviceSection/services";
 import Experience from "@/components/Main/Experience/experience";
+import GitHubSvg from "@/components/svgs/midia/GitHub.svg";
+import LinkedinSvg from "@/components/svgs/midia/LinkedIn.svg";
+import { links } from "@/utils/links";
+import InstagramSvg from "@/components/svgs/midia/Instagram";
 
 
 
@@ -67,7 +72,12 @@ export default function Home(){
                             <span>for your</span>
                             <span className="secondanimated inline-block text-transparent">business.</span>
                         </h1>
-                        <h2 id="header_animation3" className="text-gray-400 text-lg">Full Stack Devoloper</h2>
+                        <h2 className="header_animation3 text-gray-400 text-lg">Full Stack Devoloper</h2>
+                        <div className="header_animation3 w-full flex justify-center gap-4 mt-5">
+                            <Link href={links.git} target="_blank"><GitHubSvg size="40px" color="#ffffff"/></Link>
+                            <Link href={links.linkedIn} target="_blank"><LinkedinSvg size="40px" color="#ffffff"/></Link>
+                            <Link href={links.insta} target="_blank"><InstagramSvg size="40px" color="#ffffff"/></Link>
+                        </div>
                     </div>  
                 </section>
             </header>
@@ -75,13 +85,10 @@ export default function Home(){
                 <AboutMe className="aboutMe"/>
                 <ServicesSection/>
                 <Skills toogleTechSkills={toggleTechSkills} currentSkill={techSkills} skills={data.hard_skills}/>
-                <section className="w-full h-[100px] mb-5"></section>
                 <Projects projects={data.projects}></Projects>
                 <Experience experiences={data.experience}/>
             </main>
-            <footer className="w-full h-[500px] border-t-[1px] bg-[#DEDEDE] text-black p-5">
-                
-            </footer>
+            <footer className="w-full h-32"></footer>
         </div>
     )
 
