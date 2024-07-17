@@ -16,7 +16,7 @@ export default function Experience({experiences}: props){
     }
 
     return(
-        <section className="w-4/5 h-auto flex bg-gray-700 rounded-3xl
+        <section id="expirience" className="w-4/5 h-auto flex bg-gray-700 rounded-3xl
         max-md:flex-col
         max-lg:w-11/12 
         ">

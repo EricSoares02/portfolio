@@ -64,7 +64,8 @@ export default function Skills({skills, toogleTechSkills, currentSkill}: props){
             ">
                 <span className="text-4xl font-extrabold">Sobre minhas</span>
                 <h1 className="animatedText text-4xl font-extrabold">habilidades técnicas</h1>
-                <h2 className="text-sm text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quo quas necessitatibus impedit molestiae. </h2>
+                <h2 className="text-sm text-gray-400">Aqui mostro um pouco sobre minhas
+                habilidades técnicas como desenvolvedor full stack.</h2>
             </div>
             <div className="w-1/2 h-full flex flex-col items-center
             max-md:w-full 

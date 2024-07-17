@@ -25,7 +25,7 @@ export default function ServicesSection(){
                      max-md:items-center
                      ">
                         <WebSvg size="80px" color="#ffffff"/>
-                        <h1 className="font-bold text-xl">Web Devolopment</h1>
+                        <h1 className="font-bold text-xl">Desenvolvimento Web</h1>
                         <p className="text-sm text-gray-400
                         max-md:text-center
                         ">Desenvolvimento de soluções full stack para a web. Utilizando as melhores tecnologias do mercado.</p>
@@ -43,7 +43,7 @@ export default function ServicesSection(){
                      max-md:items-center
                      ">
                         <AppSvg size="80px" color="#ffffff"/>
-                        <h1 className="font-bold text-xl">Hybrid Apps</h1>
+                        <h1 className="font-bold text-xl">Apps Hibrídos</h1>
                         <p className="text-sm text-gray-400
                         max-md:text-center
                         ">Desenvolvimento de aplicativos híbridos programados em Flutter ou React Native.</p>
