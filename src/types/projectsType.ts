@@ -1,6 +1,7 @@
 
 
 type ProjectsType = {
+    id: string,
     name: string,
     description: string,
     previewVideo: string,

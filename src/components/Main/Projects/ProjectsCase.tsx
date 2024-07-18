@@ -1,7 +1,7 @@
 import { ProjectsType } from "@/types/projectsType"
-import Image from "next/image"
 import Link from "next/link";
 import "./technologies.css"
+import SeeProjectRunning from "@/components/SeeProjectRunning/SeeProjectButton";
 
 interface props {
     project: ProjectsType
@@ -10,24 +10,16 @@ interface props {
 
 export default function ProjectsCase({project}:props){
 
-    const driveLink = "https://drive.google.com/uc?export=view&id=";
 
     return(
             <div className="w-[390px] h-[600px] bg-gray-800 flex flex-col justify-end p-5">
                 <div className="w-full h-1/2 border border-blue-600">
-                    
-                <Link href={{
-                    pathname: `/project/running/${project.name}`,
-                }} 
-                className="bg-orange-500"
-                target="_blank"
-                > eye</Link>
-
+                    <SeeProjectRunning pathname={project.deployLink} />
                 </div>
                 <Link href={{
                     pathname: "/project",
                     query: {
-                        "project-name": project.name
+                        "id": project.id
                     }
                 }} className="w-full h-1/2 flex flex-col gap-5">
                     <span className="text-2xl font-semibold">{project.name}</span>

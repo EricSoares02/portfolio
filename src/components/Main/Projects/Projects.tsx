@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import "./Swiper.css"
 import { ProjectsType } from "@/types/projectsType";
-import { SwiperNavButtons } from "./SwiperNavButtons";
+import { SwiperNavButtons } from '@/components/Swiper/SwiperNavbutton';
 
 
 
