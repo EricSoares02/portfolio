@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("NEXT_PUBLIC_DB_URL")
+}
+
+model experience {
+  id           String @id @default(auto()) @map("_id") @db.ObjectId
+  category     String
+  description  String
+  period       String
+  place        String
+  roleOrCourse String
+}
+
+model hardskills {
+  id             String  @id @default(auto()) @map("_id") @db.ObjectId
+  category       String
+  imageIdAtDrive String
+  name           String
+  state          String?
+}
+
+model projects {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  deployLink       String
+  description      String
+  imagesIdAtDrive  String[]
+  name             String
+  previewVideoLink String
+  technologies     String[]
+}

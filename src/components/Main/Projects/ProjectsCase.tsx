@@ -23,7 +23,7 @@ export default function ProjectsCase({project}:props){
                     }
                 }} className="w-full h-1/2 flex flex-col gap-5">
                     <span className="text-2xl font-semibold">{project.name}</span>
-                    <p className="text-sm text-justify w-full h-32">{project.description}</p>
+                    <p className="text-sm text-justify w-full h-32 break-words">{project.description}</p>
                     <div className="w-full h-auto grid grid-cols-3 gap-2">
                         {project.technologies.map((tech)=>(
                             <div key={tech} className={`w-24 h-10 ${tech} flex items-center justify-center rounded-xl`}>{tech}</div>
