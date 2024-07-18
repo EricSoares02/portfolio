@@ -39,7 +39,7 @@ export default function AboutMe(){
                 <p className="text-justify text-base mb-4 leading-7
                 max-md:text-sm"
                 >
-                    😎 Além do desenvolvimento de interfaces responsivas e fiéis aos designs e criação de Api's, sou um entusiasta de games 3D, desenvolvidos na Unity, e apps híbridos, desenvolvidos em Flutter ou React Native. Se interessou?
+                    😎 Além do desenvolvimento de interfaces responsivas e fiéis aos designs, e criação de Api's, sou um entusiasta de games 3D, desenvolvidos na Unity, e apps desenvolvidos em Kotlin ou React Native. Se interessou?
                     <a href="#expirience" className="text-blue-700 font-semibold"> baixe meu currículo</a>. 
                 </p>
             </div>

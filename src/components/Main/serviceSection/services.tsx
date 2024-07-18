@@ -46,7 +46,7 @@ export default function ServicesSection(){
                         <h1 className="font-bold text-xl">Apps Hibrídos</h1>
                         <p className="text-sm text-gray-400
                         max-md:text-center
-                        ">Desenvolvimento de aplicativos híbridos programados em Flutter ou React Native.</p>
+                        ">Desenvolvimento de aplicativos híbridos programados em React Native.</p>
                     </div>       
                 </div>
             </div>

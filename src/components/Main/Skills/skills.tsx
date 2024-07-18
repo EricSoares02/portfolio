@@ -109,7 +109,14 @@ export default function Skills({skills, toogleTechSkills, currentSkill}: props){
                                 <Skill skills={skills.filter((skill)=>skill.category === "Mobile")}/>
                             </div>
                         </li>
-                        <li className="w-full h-24 flex items-center border-b-[1px] font-semibold">Design e Produto</li>
+                        <li className="w-full h-auto flex-col items-center border-b-[1px]">
+                            <button className="w-full h-24 flex items-center justify-between font-semibold" 
+                            onClick={()=>toogleTechSkills("Other")}>
+                            Other and Test <span className={RotateArrow(currentSkill, "Other")}><ArrowSvg size="25px" color="#ffffff"/></span></button>
+                            <div className={`${ShowTechSkills(currentSkill, "Other")} w-full h-[200px]`}>
+                                <Skill skills={skills.filter((skill)=>skill.category === "Other")}/>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
