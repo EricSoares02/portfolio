@@ -52,25 +52,24 @@ export default function Home(){
         
     },[]);
 
-
+                            //<strong className="firstanimated inline-block text-transparent">Developing</strong>
+                            //<span className="">amazing</span> 
+                            //<strong className="firstanimated inline-block text-transparent">solutions</strong>
+                            //<span>for your</span>
+                            //<span className="secondanimated inline-block text-transparent">business.</span>
 
     return(
         <div className={`w-full h-auto max-w-full bg-gray-900 text-white`}>
             <header className="w-full h-[690px]">
                 <section className="w-full h-full flex flex-col items-center justify-center">
                     <div className="flex flex-col items-center justify-center gap-1">
-                        <span id="header_animation1" className="text-gray-400 text-lg">Eric Soares</span>
                         <h1 id="header_animation2"
-                        className="text-5xl font-bold flex gap-2
+                        className="text-6xl font-bold flex flex-col justify-center items-center gap-2 bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text
                         max-2xl:text-4xl
                         max-md:flex-col
                         max-md:text-center
                         "> 
-                            <strong className="firstanimated inline-block text-transparent">Developing</strong>
-                            <span className="">amazing</span> 
-                            <strong className="firstanimated inline-block text-transparent">solutions</strong>
-                            <span>for your</span>
-                            <span className="secondanimated inline-block text-transparent">business.</span>
+                            Soares Dev
                         </h1>
                         <h2 className="header_animation3 text-gray-400 text-lg">Full Stack Devoloper</h2>
                         <div className="header_animation3 w-full flex justify-center gap-4 mt-5">
