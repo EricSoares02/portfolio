@@ -29,17 +29,17 @@ export default function AboutMe(){
                 <p className="text-justify text-base mb-4 leading-7
                 max-md:text-sm
                 ">
-                    🚀Apaixonado pelo desenvolvimento web, sou formado em TI pelo Instituto Federal de Educação Ciência e Tecnologia da Bahia (IFBA), antigo CEFET. Sou uma pessoa que adora desafios, assim como todo desenvolvedor, mas em especial aqueles que me tiram da minha zona de conforto.
+                    &#128640; Apaixonado pelo desenvolvimento web, sou formado em TI pelo Instituto Federal de Educação Ciência e Tecnologia da Bahia (IFBA), antigo CEFET. Sou uma pessoa que adora desafios, assim como todo desenvolvedor, mas em especial aqueles que me tiram da minha zona de conforto.
                 </p>
                 <p className="text-justify text-base mb-4 leading-7
                 max-md:text-sm"
                 >
-                    🖥️Sou desenvolvedor<strong> Full Stack </strong>com foco em <strong> Back End</strong>. Minha expertise abrange desde a prototipação à aplicação de projetos robustos e complexos. Ferramentas como <strong> Docker, TypeScript, Spring Boot, React, Angular, Java, AWS, Mongo DB, MySQL</strong>, são fundamentais em meu trabalho diário. Além disso, habilidades em comunicação eficaz e resolução de problemas são cruciais para transmitir insights de forma clara e impactante.
+                    &#65039; Sou desenvolvedor<strong> Full Stack </strong>com foco em <strong> Back End</strong>. Minha expertise abrange desde a prototipação à aplicação de projetos robustos e complexos. Ferramentas como <strong> Docker, TypeScript, Spring Boot, React, Angular, Java, AWS, Mongo DB, MySQL</strong>, são fundamentais em meu trabalho diário. Além disso, habilidades em comunicação eficaz e resolução de problemas são cruciais para transmitir insights de forma clara e impactante.
                 </p>
                 <p className="text-justify text-base mb-4 leading-7
                 max-md:text-sm"
                 >
-                    😎 Além do desenvolvimento de interfaces responsivas e fiéis aos designs, e criação de Api's, sou um entusiasta de games 3D, desenvolvidos na Unity, e apps desenvolvidos em Kotlin ou React Native. Se interessou?
+                    &#128526; Além do desenvolvimento de interfaces responsivas e fiéis aos designs, e criação de Api's, sou um entusiasta de games 3D, desenvolvidos na Unity, e apps desenvolvidos em Kotlin ou React Native. Se interessou?
                     <a href="#expirience" className="text-blue-700 font-semibold"> baixe meu currículo</a>. 
                 </p>
             </div>

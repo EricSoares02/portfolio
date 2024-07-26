@@ -12,13 +12,14 @@ import ImagesSlider from '@/components/pages/projectPage/slide/ImageSlider';
 export default function Project(){
 
     const searchParams = useSearchParams();
-    const projectId = searchParams.get('id');
+    
 
     const [data, SetData] = useState(null);
     
 
     useEffect(()=>{
         async function promises(){
+          const projectId = searchParams.get('id');
           const promises = await getProject(projectId ?? "");
 
             return promises
