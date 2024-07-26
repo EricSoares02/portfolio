@@ -3,8 +3,8 @@ import { useSearchParams } from 'next/navigation'
 import SeeProjectRunning from "@/components/SeeProjectRunning/SeeProjectButton";
 import BackButton from '@/components/BackButton/backButton';
 import { useState, useEffect } from 'react';
-import { getProject } from '@/utils/pagesRequests/projectRequest';
 
+import axios from "axios";
 import "../../components/Main/Projects/technologies.css"
 import ImagesSlider from '@/components/pages/projectPage/slide/ImageSlider';
 
@@ -20,7 +20,16 @@ export default function Project(){
     useEffect(()=>{
         async function promises(){
           const projectId = searchParams.get('id');
-          const promises = await getProject(projectId ?? "");
+          
+
+            const api_url = process.env.NEXT_PUBLIC_API_URL;
+
+            async function getProject(id:string){
+
+                const {data} = await axios.get(`${api_url}project?id=${id}`);
+                return data
+             }
+            const promises = await getProject(projectId ?? "");
 
             return promises
         }
