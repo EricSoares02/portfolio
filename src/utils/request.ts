@@ -2,7 +2,6 @@ import axios from "axios"
 
 const api_url = process.env.NEXT_PUBLIC_API_URL;
 
-console.info(api_url)
 
 async function getHardSkills(){
 
