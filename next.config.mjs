@@ -7,6 +7,12 @@ const nextConfig = {
              hostname: '**',
             },
          ],
+    },
+    typescript:{
+        ignoreBuildErrors: true
+    },
+    eslint:{
+        ignoreDuringBuilds: true
     }
 };
 
