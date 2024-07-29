@@ -35,7 +35,7 @@ export default function Home(){
     useEffect(()=>{
         async function promises(){
           const promises = await Promise.all([getProjects(), getHardSkills(), getExperiences()]);
-
+                
             return promises
         }
 
