@@ -1,4 +1,4 @@
-"use client"
+
 import { useSearchParams } from 'next/navigation'
 import SeeProjectRunning from "@/components/SeeProjectRunning/SeeProjectButton";
 import BackButton from '@/components/BackButton/backButton';
