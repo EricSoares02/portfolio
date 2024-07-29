@@ -1,5 +1,5 @@
 "use client"
-import { useSearchParams } from 'next/navigation'
+import { useParams } from 'next/navigation'
 import SeeProjectRunning from "@/components/SeeProjectRunning/SeeProjectButton";
 import BackButton from '@/components/BackButton/backButton';
 import { useState, useEffect } from 'react';
@@ -11,7 +11,7 @@ import ImagesSlider from '@/components/pages/projectPage/slide/ImageSlider';
 
 export default function Project(){
 
-    const searchParams = useSearchParams();
+    const params = useParams<{id: string}>();
     
 
     const [data, SetData] = useState(null);
@@ -19,7 +19,8 @@ export default function Project(){
 
     useEffect(()=>{
         async function promises(){
-          const projectId = searchParams.get('id');
+          
+            const projectId = params.id;
           
 
             const api_url = process.env.NEXT_PUBLIC_API_URL;
