@@ -11,7 +11,7 @@ export async function GET(req: NextRequest) {
     const hardSkills = await new HardSkillsRepository().getAll();
     return NextResponse.json(hardSkills, { status: 200 });
   } catch (error) {
-    return NextResponse.json({ message: "Error" }, { status: 500 });
+    return NextResponse.json({ message: error }, { status: 500 });
   }
  
 }
