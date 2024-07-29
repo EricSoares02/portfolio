@@ -25,11 +25,8 @@ class ProjectsRepository{
 
 
     async getAll(){
-        
-        await this.db.connect();
-        return this.db.tables().projects.findMany().finally(()=>{
-            this.db.disconnect();
-        });
+
+        return await this.db.tables().projects.findMany();
 
     }
 

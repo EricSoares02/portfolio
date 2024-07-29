@@ -5,16 +5,6 @@ class Database{
 
     private databaseConnection = new PrismaClient() 
 
-    
-    async connect(){
-
-        return await this.databaseConnection.$connect();
-
-    }
-
-    async disconnect(){
-        return await this.databaseConnection.$disconnect();
-    }
 
     tables(){
         return this.databaseConnection
