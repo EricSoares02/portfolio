@@ -1,8 +1,8 @@
 // app/api/route.js 👈🏽
 
 import {NextRequest ,NextResponse } from "next/server";
-import ProjectsRepository from "../dto/repositories/projects";
 import { z } from "zod";
+import ProjectsRepository from "../../dto/repositories/projects";
 
 
 export async function GET(req: NextRequest) {
