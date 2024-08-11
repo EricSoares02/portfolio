@@ -1,5 +1,5 @@
 import AppSvg from "@/components/svgs/services/app";
-import GameSvg from "@/components/svgs/services/game";
+import SoftwareSvg from "@/components/svgs/services/software";
 import WebSvg from "@/components/svgs/services/web";
 
 
@@ -33,20 +33,20 @@ export default function ServicesSection(){
                     <div className="w-96 h-60 flex flex-col gap-5
                      max-md:items-center
                      ">
-                        <GameSvg size="80px" color="#ffffff"/>
-                        <h1 className="font-bold text-xl">Games</h1>
+                        <SoftwareSvg size="80px" color="#ffffff"/>
+                        <h1 className="font-bold text-xl">Desenvolvimento de Software</h1>
                         <p className="text-sm text-gray-400 
                         max-md:text-center
-                        ">Desenvolvimento de games para mobile ou desktop utilizando a unity 3D.</p>
+                        ">Criação de Softwares, desenvolvidos em C# e .Net.</p>
                     </div> 
                     <div className="w-96 h-60 flex flex-col gap-5
                      max-md:items-center
                      ">
                         <AppSvg size="80px" color="#ffffff"/>
-                        <h1 className="font-bold text-xl">Apps Hibrídos</h1>
+                        <h1 className="font-bold text-xl">Desenvolvimento Mobile</h1>
                         <p className="text-sm text-gray-400
                         max-md:text-center
-                        ">Desenvolvimento de aplicativos híbridos programados em React Native.</p>
+                        ">Desenvolvimento de aplicações mobile, utilizando Kotlin ou React Native.</p>
                     </div>       
                 </div>
             </div>

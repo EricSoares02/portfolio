@@ -24,7 +24,7 @@ export default function ExperienceCard({experience}:props){
                     ">-</span>
                     <h3>{experience.place}</h3>
                 </span>
-                <p className="text-sm text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet praesentium fugiat consequuntur sunt ex accusamus voluptate nulla illum facilis, accusantium rem, ducimus totam doloremque minus fuga tempora, ab nisi placeat.</p>
+                <p className="text-sm text-justify">{experience.description}</p>
                 <h4 className="text-xs">{experience.period}</h4>
             </div>
         </section>

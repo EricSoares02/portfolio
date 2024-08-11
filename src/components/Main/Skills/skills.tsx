@@ -97,7 +97,7 @@ export default function Skills({skills, toogleTechSkills, currentSkill}: props){
                             <button className="w-full h-24 flex items-center justify-between font-semibold" 
                             onClick={()=>toogleTechSkills("Banco de Dados")}>
                             Banco de Dados <span className={RotateArrow(currentSkill, "Banco de Dados")}><ArrowSvg size="25px" color="#ffffff"/></span></button>
-                            <div className={`${ShowTechSkills(currentSkill, "Banco de Dados")} w-full h-[300px]`}>
+                            <div className={`${ShowTechSkills(currentSkill, "Banco de Dados")} w-full h-[200px]`}>
                                 <Skill skills={skills.filter((skill)=>skill.category === "Banco de Dados")}/>
                             </div>
                         </li>
@@ -113,7 +113,7 @@ export default function Skills({skills, toogleTechSkills, currentSkill}: props){
                             <button className="w-full h-24 flex items-center justify-between font-semibold" 
                             onClick={()=>toogleTechSkills("Other")}>
                             Other and Test <span className={RotateArrow(currentSkill, "Other")}><ArrowSvg size="25px" color="#ffffff"/></span></button>
-                            <div className={`${ShowTechSkills(currentSkill, "Other")} w-full h-[200px]`}>
+                            <div className={`${ShowTechSkills(currentSkill, "Other")} w-full h-[300px]`}>
                                 <Skill skills={skills.filter((skill)=>skill.category === "Other")}/>
                             </div>
                         </li>

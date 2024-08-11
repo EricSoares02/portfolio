@@ -14,18 +14,9 @@ export default function AboutMe(){
             max-lg:w-full
             max-lg:h-[530px]
             ">
-                <h1
-                className="pt-16 text-4xl font-semibold mb-1
-                max-md:text-2xl
-                max-md:pt-4
-                "
-                >
-                Olá, <br /> Eu sou{" "}
-                    <span className="bg-gradient-to-r from-amber-500 to-pink-500 inline-block text-transparent bg-clip-text">
-                        Eric Soares 
-                    </span>
+                <h1 className="w-full h-20 flex items-center text-lg font-semibold text-green-400">
+                    Quem sou.
                 </h1>
-                <h2 className="text-zinc-400 mb-4">Full Stack Developer</h2>
                 <p className="text-justify text-base mb-4 leading-7
                 max-md:text-sm
                 ">

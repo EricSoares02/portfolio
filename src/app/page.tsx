@@ -13,7 +13,7 @@ import GitHubSvg from "@/components/svgs/midia/GitHub.svg";
 import LinkedinSvg from "@/components/svgs/midia/LinkedIn.svg";
 import { links } from "@/utils/links";
 import InstagramSvg from "@/components/svgs/midia/Instagram";
-
+import Image from 'next/image';
 
 
 
@@ -52,33 +52,53 @@ export default function Home(){
         
     },[]);
 
-                            //<strong className="firstanimated inline-block text-transparent">Developing</strong>
-                            //<span className="">amazing</span> 
-                            //<strong className="firstanimated inline-block text-transparent">solutions</strong>
-                            //<span>for your</span>
-                            //<span className="secondanimated inline-block text-transparent">business.</span>
+  
 
     return(
-        <div className={`w-full h-auto max-w-full bg-gray-900 text-white`}>
-            <header className="w-full h-[690px]">
-                <section className="w-full h-full flex flex-col items-center justify-center">
-                    <div className="flex flex-col items-center justify-center gap-1">
-                        <h1 id="header_animation2"
-                        className="text-6xl font-bold flex flex-col justify-center items-center gap-2 bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text
-                        max-2xl:text-4xl
-                        max-md:flex-col
-                        max-md:text-center
-                        "> 
-                            Soares Dev
-                        </h1>
-                        <h2 className="header_animation3 text-gray-400 text-lg">Full Stack Devoloper</h2>
-                        <div className="header_animation3 w-full flex justify-center gap-4 mt-5">
-                            <Link href={links.git} target="_blank"><GitHubSvg size="40px" color="#ffffff"/></Link>
-                            <Link href={links.linkedIn} target="_blank"><LinkedinSvg size="40px" color="#ffffff"/></Link>
-                            <Link href={links.insta} target="_blank"><InstagramSvg size="40px" color="#ffffff"/></Link>
+        <>
+            <header className="add_hero w-full h-[690px] flex justify-center
+            max-md:h-[870px]
+            ">
+                <div 
+                className="w-4/5 h-auto flex
+                max-md:w-11/12
+                max-md:flex-col-reverse
+                ">
+                    <div className="w-1/2 h-full flex flex-col gap-10
+                    max-md:w-full
+                    max-md:h-1/2
+                    ">
+                        <div className="w-full h-[400px] flex justify-center items-end gap-4">
+                            <h1 className="text-4xl font-bold mb-1
+                            max-md:text-3xl
+                            ">
+                                Olá, <br /> Eu sou{" "}
+                                <span className="bg-gradient-to-r from-amber-500 to-pink-500 inline-block text-transparent bg-clip-text">
+                                Eric Soares, 
+                                </span>
+                                {" "}atuo como 
+                                <span className="bg-gradient-to-r from-amber-500 to-pink-500 inline-block text-transparent bg-clip-text">
+                                {" "}Desenvolvedor de Software Full Stack. 
+                                </span>
+                            </h1>
                         </div>
-                    </div>  
-                </section>
+                        <div className="w-full h-20 flex items-center gap-4">
+                            <Link href={links.git} target="_blank"><GitHubSvg size="34px" color="#ffffff"/></Link>
+                            <Link href={links.linkedIn} target="_blank"><LinkedinSvg size="34px" color="#ffffff"/></Link>
+                            <Link href={links.insta} target="_blank"><InstagramSvg size="34px" color="#ffffff"/></Link>
+                        </div> 
+                        <div className="w-full h-24">
+
+                        </div>
+                    </div>
+                    <div className="w-1/2 h-full flex justify-center items-center
+                    max-md:w-full
+                    max-md:h-1/2
+                    max-md:mb-20
+                    ">
+                        <iframe className="w-72 h-72" src="https://lottie.host/embed/15efb473-eded-4d79-b056-6d951e7f1e2a/HjJilOuYFR.json"></iframe> 
+                    </div>
+                </div>
             </header>
             <main className="w-full h-auto flex flex-col items-center justify-center gap-8 mb-8">
                 <AboutMe className="aboutMe"/>
@@ -88,7 +108,9 @@ export default function Home(){
                 <Experience experiences={data.experience}/>
             </main>
             <footer className="w-full h-32"></footer>
-        </div>
+        </>
     )
 
 }
+
+// <iframe className="w-72 h-72" src="https://lottie.host/embed/dc2cb484-f0f4-45c3-b117-2c3c8841aa87/2zJL1p9cDs.json"></iframe>
