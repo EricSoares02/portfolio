@@ -14,30 +14,27 @@ export default function ProjectsCase({project}:props){
 
 
     return(
-            <div className="w-[390px] h-[600px] bg-gray-800 flex flex-col justify-end p-5">
-                <Link href={{
-                    pathname: "/project",
-                    query: {
-                        "id": project.id
-                    }
-                }} className="w-full h-full flex flex-col gap-5">
-                    <Image
+            <div className="w-[390px] h-[600px] bg-gradient-to-b from-gray-700 to-gray-900 flex flex-col justify-end p-5">
+                <div className="w-full h-full flex flex-col gap-5 justify-between pt-10">
+                    {/* <Image
                     src={`${driveLink}${project.imagesIdAtDrive[0]}`}
                     width={500}
                     height={500}
                     alt="project image"
                     className="w-full h-[250px]"
-                    />
-                    <SeeProjectRunning pathname={project.deployLink} />
-                    <span className="text-2xl font-semibold">{project.name}</span>
-                    <p className="text-sm text-justify w-full h-32 break-words">{project.description}</p>
+                    /> */}
+                    {/* <SeeProjectRunning pathname={project.deployLink} /> */}
+                    <div className="w-full h-auto flex flex-col gap-10">
+                        <span className="text-2xl font-semibold">{project.name}</span>
+                        <p className="text-sm text-justify w-full h-32 break-words">{project.description}</p>
+                    </div>
                     <div className="w-full h-auto grid grid-cols-3 gap-2">
                         {project.technologies.map((tech)=>(
                             <div key={tech} className={`w-24 h-10 ${tech} flex items-center justify-center rounded-xl`}>{tech}</div>
                         ))}
 
                     </div>
-                </Link>
+                </div>
             </div>
     )
 

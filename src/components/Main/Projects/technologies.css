@@ -11,11 +11,33 @@
     background-color: #eab308;
 }
 
+.TypeScript{
+    background-color: #049DD9;
+}
+
 .Python{
     background: linear-gradient(to right,
         #4584b6,
         #ffde57
     );
+}
+
+.NestJS{
+    background-color: #dc2626;
+}
+
+.Kotlin{
+    background: linear-gradient(to right,
+        #049DD9,
+        #F2790F
+    );
+}
+
+.Kafka{
+    background-color: #94a3b8;
+}
+.Redis{
+    background-color: #dc2626;
 }
 
 .Spring{

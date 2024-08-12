@@ -87,8 +87,13 @@ export default function Home(){
                             <Link href={links.linkedIn} target="_blank"><LinkedinSvg size="34px" color="#ffffff"/></Link>
                             <Link href={links.insta} target="_blank"><InstagramSvg size="34px" color="#ffffff"/></Link>
                         </div> 
-                        <div className="w-full h-24">
-
+                        <div className="w-full h-24 flex gap-10">
+                            <Link href="#expirience"
+                            className="w-44 h-12 text-sm flex justify-center items-center duration-300 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-600 font-medium 
+                            focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 rounded-lg
+                            hover:scale-110
+                            "
+                            >Veja meu currículo</Link>
                         </div>
                     </div>
                     <div className="w-1/2 h-full flex justify-center items-center
@@ -100,14 +105,25 @@ export default function Home(){
                     </div>
                 </div>
             </header>
-            <main className="w-full h-auto flex flex-col items-center justify-center gap-8 mb-8">
+            <main className="w-full h-auto flex flex-col items-center justify-center mb-8">
                 <AboutMe className="aboutMe"/>
                 <ServicesSection/>
                 <Skills toogleTechSkills={toggleTechSkills} currentSkill={techSkills} skills={data.hard_skills}/>
                 <Projects projects={data.projects}></Projects>
                 <Experience experiences={data.experience}/>
             </main>
-            <footer className="w-full h-32"></footer>
+            <footer className="w-full h-32 border-t-[1px] border-gray flex items-center justify-center">
+                <div className="w-4/5 h-full flex items-center justify-between">
+                    <span className="w-1/2 text-sm
+                    max-md:w-10/12
+                    ">© Developer by Eric Soares</span>
+                    <div className="w-1/2 h-20 flex items-center justify-end gap-4">
+                            <Link href={links.git} target="_blank"><GitHubSvg size="34px" color="#ffffff"/></Link>
+                            <Link href={links.linkedIn} target="_blank"><LinkedinSvg size="34px" color="#ffffff"/></Link>
+                            <Link href={links.insta} target="_blank"><InstagramSvg size="34px" color="#ffffff"/></Link>
+                    </div> 
+                </div>
+            </footer>
         </>
     )
 

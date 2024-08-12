@@ -56,7 +56,7 @@ export default function Skills({skills, toogleTechSkills, currentSkill}: props){
     )
     }
     return (
-        <section className="w-11/12 h-auto min-h-[700px] flex mb-28
+        <section className="add_hero w-11/12 h-auto min-h-[700px] flex mb-28
         max-md:flex-col
         ">
             <div className="w-1/2 h-[500px] flex flex-col px-[10%] justify-center 
@@ -70,7 +70,7 @@ export default function Skills({skills, toogleTechSkills, currentSkill}: props){
             <div className="w-1/2 h-full flex flex-col items-center
             max-md:w-full 
             ">
-                <h1 className="w-full h-16 text-lg text-gray-500 font-semibold hidden
+                <h1 className="w-full h-16 text-lg text-gray-500 font-semibold hidden items-end
                 max-md:flex
                 ">Minhas Tecnologias</h1>
                 <nav className="w-full h-full

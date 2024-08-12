@@ -4,6 +4,8 @@ import "./animation.css"
 
 export default function AboutMe(){
 
+    const photo = process.env.MY_PHOTO ?? "/eu.jpg"
+
     return(
         <section className="aboutme w-4/5 h-auto flex mb-4
         max-xl:w-10/12
@@ -25,23 +27,19 @@ export default function AboutMe(){
                 <p className="text-justify text-base mb-4 leading-7
                 max-md:text-sm"
                 >
-                     Sou desenvolvedor<strong> Full Stack </strong>com foco em <strong> Back End</strong>. Minha expertise abrange desde a prototipação à aplicação de projetos robustos e complexos. Ferramentas como <strong> Docker, TypeScript, Spring Boot, React, Angular, Java, AWS, Mongo DB, MySQL</strong>, são fundamentais em meu trabalho diário. Além disso, habilidades em comunicação eficaz e resolução de problemas são cruciais para transmitir insights de forma clara e impactante.
+                     Sou desenvolvedor<strong> Full Stack </strong>com foco em <strong> Back End</strong>. Minha expertise abrange desde a prototipação à aplicação de projetos robustos e complexos. Ferramentas como <strong> Docker, TypeScript, Spring Boot, React, Angular, Java, AWS, Mongo DB, MySQL</strong>, são fundamentais em meu trabalho diário. Além disso, habilidades em comunicação eficaz e resolução de problemas são cruciais para transmitir insights de forma clara.
                 </p>
-                <p className="text-justify text-base mb-4 leading-7
-                max-md:text-sm"
-                >
-                     Além do desenvolvimento de interfaces responsivas e fiéis aos designs, e criação de Apis, sou um entusiasta de games 3D, desenvolvidos na Unity, e apps desenvolvidos em Kotlin ou React Native. Se interessou?
-                    <a href="#expirience" className="text-blue-700 font-semibold"> baixe meu currículo</a>. 
-                </p>
+                
             </div>
             <div className="w-1/2 h-[550px] flex items-center justify-center
             max-lg:w-full
             ">
                 <Image
-                src="/eu.jpeg"
-                width={400}
-                height={400}
+                src={photo}
+                width={350}
+                height={350}
                 alt="Picture of the author"
+                className='rounded-full'
                 />
             </div>
         </section>

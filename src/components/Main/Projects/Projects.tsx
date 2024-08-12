@@ -29,12 +29,11 @@ export default function Projects({projects}:props){
     }  
 
   return (
-        <section className="w-4/5 h-auto flex flex-col gap-8
+        <section className="w-4/5 h-auto flex flex-col gap-8 mb-10
         max-md:w-10/12
         ">
             <div className="w-full h-12 flex flex-col items-center justify-center">
-                <h1 className="text-3xl font-semibold text-nowrap">O que tenho feito</h1>
-                <h2 className="text-sm font-semibold text-nowrap text-gray-400">Aqui estão alguns projetos pessoais para exposição</h2>
+                <h1 className="text-3xl font-semibold text-nowrap">Projetos</h1>
             </div>
             <div className="w-[103%] h-[680px] flex">
                     <Swiper

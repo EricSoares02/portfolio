@@ -13,7 +13,7 @@ export default function Skill({skills}: props){
 
     const driveLink = "https://drive.google.com/uc?export=view&id=";
     return(
-        <div className="w-full h-auto grid grid-cols-4">
+        <section className="w-full h-auto grid grid-cols-4">
             {skills.map((skill)=>(
                 <div key={skill.name}
                 className="w-24 h-auto flex flex-col gap-1 items-center justify-center"
@@ -30,7 +30,7 @@ export default function Skill({skills}: props){
                     <span className="w-20 h-5 flex justify-center text-sm text-center">{skill.name}</span>
                 </div>
             ))}
-        </div>
+        </section>
       
     )
 }

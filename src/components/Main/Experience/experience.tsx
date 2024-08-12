@@ -34,9 +34,8 @@ export default function Experience({experiences}: props){
                     Minha <span className="animatedText">educação</span> e work experience.
                 </h1>
 
-                <Link href="https://drive.google.com/uc?export=download&id=1yeRkcU4Le65G3NPvbNJ8fO2pg4a9HDdX"
+                <Link href="https://drive.google.com/uc?export=download&id=1GzOkEsmxZkC_BSoD7EvfsEkkxRmhLLdZ"
                 className="w-52 h-14 text-sm flex justify-center items-center duration-300 bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-600 font-medium 
-              
                 hover:scale-110
                 "
                 >Baixar Currículo</Link>
